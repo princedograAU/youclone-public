@@ -1,0 +1,28 @@
+//////////////////
+// C O R E
+//////////////////
+@import "./utils/mixins";                               // Mixins
+@import "./utils/variables";                            // Variables
+@import "./utils/base";                                 // Base settings
+@import "./utils/utilities";                            // Utility classes
+
+@import "./utils/components/forms";                     // form component
+@import "./utils/components/tooltip";                   // tooltip
+
+////////////////////////////
+// C O M P O N E N T S
+////////////////////////////
+@import "./components/UI/Logo/Logo";                    // Logo
+@import "./components/UI/Backdrop/Backdrop";            // Backdrop
+@import "./components/UI/SideDrawer/SideDrawer";        // Side Drawer
+@import "./components/Navigation/Navigation";           // Navigation
+@import "./components/Navigation/Navbar/Navbar";        // Navbar
+@import "./components/UI/SearchBar/SearchBar";          // SearchBar
+@import "./components/UI/VideoCardMain/VideoCardMain";  // Video Card Main 
+@import "./components/UI/CardVideo/CardVideo";          // Video Card
+@import "./components/UI/Icon/Icon";                    // Icon
+
+/////////////////////////
+// L A Y O U T S
+/////////////////////////
+@import "./components/Layout/yc-video";      // Video Main - Landing Page

@@ -1,0 +1,51 @@
+.video-card-main {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 28rem;
+    margin-bottom: $horizontal-gutter;
+    cursor: pointer;
+    text-decoration: none;
+
+    &__banner {
+        width: 100%;
+        background-color: $light;
+
+        &-image {
+            width: 100%;
+            border: none;
+        }
+    }
+
+    &__info {
+        width: 100%;
+        min-height: 6rem;
+        padding: 1rem .5rem;
+        display: flex;
+
+        &-channel {
+            background-color: $light-grey;
+            border-radius: 50%;
+            width: 4rem;
+            height: 4rem;
+            flex: 0 0 4rem;
+            margin-right: 2rem;
+            cursor: pointer;
+        }
+
+        &-about {
+            & > :not(:last-child) {
+                margin-bottom: .7rem;
+            }
+        }
+    }
+
+    @include respond(tab-port) {
+        flex: 0 0 26rem;
+    }
+
+    @include respond(phone) {
+        justify-content: space-evenly;
+        flex: 0 0 45%;
+        box-sizing: border-box;
+    }
+}

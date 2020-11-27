@@ -1,0 +1,22 @@
+.backdrop {
+    width: 0;
+    height: 0;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    position: fixed;
+    background-color: rgba($dark, 0.5);
+
+    transform: z-index .3s ease-out;
+
+    @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+    }
+}
+
+.backdrop-open {
+    width: 100vw;
+    height: 100vh;
+    z-index: 99;
+}

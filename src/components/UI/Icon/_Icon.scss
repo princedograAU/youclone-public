@@ -1,0 +1,31 @@
+.yc-icon {
+
+    display: inline-block;
+    transition: all .2s;
+    position: relative;
+
+    &:active,
+    &:focus {
+        background-color: rgba($dark, .1);
+        border-radius: 50%;
+
+        &::after {
+            transform: scale(4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 20;
+        transition: all .3s;
+        background-color: red;
+    }
+}

@@ -1,0 +1,64 @@
+[class^="heading-"] {
+    color: $dark;
+    font-weight: 400;
+}
+
+.heading {
+
+    &-1 {
+        font-size: 3.2rem;
+    }
+
+    &-2 {
+        font-size: 2.4rem;
+    }
+
+    &-3 {
+        font-size: 1.8rem;
+    }
+
+    &-4 {
+        font-size: 1.6rem;
+    }
+
+    &-5 {
+        font-size: 1.2rem;
+    }
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.semi-bold {
+    font-weight: 600;
+}
+
+.middle-dot {
+    font-weight: 900;
+    color: $dark;
+    margin: 0 1rem;
+}
+
+hr {
+    color: rgba($light-grey, .3);
+}
+
+.container {
+    width: 100%;
+    display: flex;
+}
+
+.social__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > * {
+        padding: .7rem;
+    }
+}

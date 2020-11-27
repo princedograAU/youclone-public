@@ -1,0 +1,35 @@
+// CSS root -  for future use
+:root {
+    --primary: #931a25;
+    --white: #fff;
+    --dark: #373737;
+    --light: #d6e0f0;
+    --grey: #8d93ab;
+    --light-grey: #ddd;
+
+    // shadow small
+    --shadow-sm: 0 1rem 3rem rgba(0,0,0,.15);
+
+    // font
+    --font-primary: "Lato", sans-serif;
+}
+
+$primary: #931a25;
+$secondary: #132743;
+$white: #fff;
+$dark: #373737;
+$dark-light: #777;
+$light: #d6e0f0;
+$grey: #8d93ab;
+$light-grey: #ddd;
+
+// shadow small
+$shadow-sm: 0 1rem 3rem rgba(0,0,0,.15);
+
+// font
+$font-primary: "Lato", sans-serif;
+$dark: #373737;
+
+// gutters
+$horizontal-gutter: 3rem;
+$vertical-gutter: 2rem;

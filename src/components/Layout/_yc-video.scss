@@ -1,0 +1,52 @@
+.video{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    background-color: rgba($light-grey, .1);
+    padding: 3rem;
+
+    &__main {
+        @extend .video;
+
+        @include respond(tab-port) {
+            padding: 3rem 2rem;
+        }
+
+        @include respond(phone) {
+            padding: 3rem auto;
+        }
+    }
+
+    &__results {
+        @extend .video;
+        flex-direction: column;
+    }
+
+    &__watch {
+        @extend .video;
+
+        &-main {
+            flex: 0 0 60%;
+            height: auto;
+            color: $dark;
+
+            & > *:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+            
+            & iframe {
+                width: 100%;
+                min-height: 36rem;
+                border: none;
+                background-color: rgba($light-grey, .1);
+            }
+
+        }
+
+        &-recommendations {
+            margin-left: auto;
+            flex: 0 0 37%;
+        }
+    }
+
+}

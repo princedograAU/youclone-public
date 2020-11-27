@@ -1,0 +1,11 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7rem;
+    background-color: var(--white);
+    color: var(--dark);
+    box-shadow: var(--shadow-sm);
+    font-size: 1.6rem;
+    padding: 0 2rem;
+}

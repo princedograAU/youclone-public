@@ -1,0 +1,58 @@
+.side-drawer {
+    position: fixed;
+    height: 100%;
+    width: 25rem;
+    top: 0;
+    left: -25rem;
+    z-index: 100;
+    transition: left .4s ease;
+    background-color: $white;
+    box-shadow: rgba($dark, .5);
+    overflow-y: scroll;
+
+    display: flex;
+    flex-direction: column;
+
+    &__header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: $grey;
+        padding: 1.5rem 0;
+        border-bottom: 1px solid $light-grey;
+    }
+
+    &__main {
+        margin-top: 2rem;
+        display: flex;
+        color: var(--dark);
+        flex-direction: column;
+        margin-bottom: auto;
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: $dark;
+        text-align: center;
+        
+        padding: 2.5rem 2rem;
+        border-top: 1px solid $light-grey;
+
+        & > *:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    
+}
+
+.open {
+    left: 0;
+}
